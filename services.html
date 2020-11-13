@@ -4,15 +4,16 @@
   <head>
     <title>Services</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   </head>
 
 <body>
   <header class="header">
-    <div class="wrapper">
-      <div class="logo-header" href="index.html"> <a href="index.html"> ><img class="logo-header" src="img/logo.png"alt="" Width=100px
-        Height=100px></a>
+    <div class="logo-header">
+      <a href="index.html"> ><img class="logo-header" src="img/logo.png"alt="" Width=100px
+      Height=100px></a>
     </div>
       <nav class="nav">
         <ul class="nav-list">
@@ -23,7 +24,6 @@
             <a href="about-us.html" class="nav-link">Qui sommes-nous ? </a>
           </li>
           <li class="nav-list-item">
-
             <a href="services.html" class="nav-link nav-link-active">Services</a>
           </li>
         </ul>
@@ -31,8 +31,8 @@
     </div>
   </header>
 
-  <main class="main">
-    <div class="wrapper">
+  <div class="wrapper">
+    <main class="main">
       <div class="bloc-intro">
         <h1>
           Nos services
@@ -41,9 +41,9 @@
             Retrouvez ci-dessous l'ensemble de nos services. N'hésitez pas à nous contacter pour toute demande particulière.
           </p>
       </div>
-      
-      <div class="container">
-        <div class="bloc-infos">
+    
+      <div class="grid-services">
+        <div class="bloc-services">
           <div>
             <img
               src="img/map-marker.png"
@@ -55,8 +55,9 @@
             <p>
               Il n'est pas toujours aisé de pouvoir apporter soi-même son vélo dans un atelier pour le faire réparer. C'est pourquoi nous vous proposons un service à domicile. Nous nous déplaçons chez vous afin de récupérer votre vélo, le réparer en atelier, et vous le ramener lorsqu'il est prêt.
             </p>
-            
           </div>
+        </div>
+        <div class="bloc-services">
           <div class="illustration">
             <img
               src="img/services/services-01.jpg"
@@ -65,13 +66,15 @@
           </div>
         </div>
 
-        <div class="bloc-infos">
+        <div class="bloc-services">
           <div class="illustration">
             <img
               src="img/services/services-02.jpg"
               alt=""
             />  
           </div>
+        </div>
+        <div class="bloc-services">
           <div>
             <img
               src="img/support.png" alt=""
@@ -85,7 +88,7 @@
           </div>
         </div>
 
-        <div class="bloc-infos">
+        <div class="bloc-services">
           <div>
             <img
               src="img/express.png"
@@ -98,7 +101,8 @@
               Une sortie prévue ce week-end, mais vous aviez oublié que votre vélo a besoin d'une petite réparation ? Nous pouvons intervenir afin que votre vélo soit en état de rouler dans les 24h.
             </p>
           </div>
-        <div class="bloc-infos">
+        </div>
+        <div class="bloc-services">
           <div>
             <img
               src="img/tools.png"
@@ -111,10 +115,35 @@
               Notre atelier est à la pointe. Votre vélo est entre de bonnes mains.
             </p>
           </div>
+        </div>
       </div>      
-    </div>
-  </main>
+    </main>
 
+    <div class="background-footer">
+      <footer class="footer">
+          <p class="footer-adresse">
+              Be Biker Service<br />
+              143, avenue de Versailles,
+              75015 Paris<br />
+              contact@bebiker.fr<br />
+              01.23.45.67.89
+          </p>
+  
+          <div class="footer-liens">
+              <nav>
+                  <ul>
+                      <a class="test" href="index.html">Accueil</a>
+                      <br />
+                      <a href="about-us.html">Qui sommes-nous?</a>
+                      <br />
+                      <a href="services.html"> Services</a>
+                      <br />
+                  </ul>
+              </nav>
+          </div>
+      </footer>
+    </div>
+  </div>
 </body>
 
 
