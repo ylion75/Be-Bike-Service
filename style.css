@@ -135,62 +135,146 @@ header.wrapper{
 }
 
 
-  footer{
-    font-family: Roboto;
-    display:flex;
-    align-items: start;
-    background-color:black; 
-    justify-content: start;      /* Éléments groupés au début */
-  }
+/*<!--Page 2 : ABOUT -->*/
 
-  .footer .div{
-    color: rgba(255, 255, 255, 0.75);
-    font-style: italic;
-    font-weight: normal;
-  }
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
 
-  .footer .nav-list
+.page-title {
+    display: block;
+    background-color: #F7F7F7;
+    position: absolute;
+    width: 100%;
+}
+
+    .page-title h1 {
+        font-size: 36px; /*pour la version mobile*/
+        text-align: center;
+        font-weight: 700;
+        line-height: center;
+        letter-spacing: 0em;
+    }
+
+
+
+/*Création de la grille avec les 3 paragraphes*/
+.about-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 25%; /*pour la version mobile*/
+    font-size: 16px; 
+    line-height: 24px; 
+}
+
+/*version tablette*/
+@media (min-width : 710px) and (max-width : 1280px)
+{
+  .about-text
   {
-  font-style: normal;
-
-color: #39D6C0;
+    padding-top: 13%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
-
-  /*
-  @media screen and (max-width: 800px)
+  
+  .histo-jeto
   {
-    .footer
-    {
-      grid-template-columns: (3, 1fr);
-      left : 19px;
-      bottom : 32px;
-      position: absolute;
-      width: 375px;
-      height: 304px;
-    }
-    .footer .div 
-    {
-      font-size : 16px;
+    display: grid;
+    grid-template-columns:  0.90fr 1fr;
+    grid-gap : 5%;
+  }
+}
 
-      position: absolute;
-      width: 176px;
-      height: 120px;
-      left: 19px;
-      bottom: 152px;
+/*version ordinateur*/
+@media (min-width : 1280px)
+{
+  .about-text
+  {
+    padding-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .desktop-grid
+  {
+    display: inline-grid;
+    grid-template-columns: 67% auto auto;
+    grid-gap : 3%;
+    max-height: 100%;
+ }
 
-      font-size: 16px;
-      line-height: 24px;
-      /* or 150% 
+}
+
+
+/* Boutton : taille fixe*/
+.button-bleu { /* ancien about-button*/
+    width: 335px;
+    height: 64px;
+    background-color: #39D6C0;
+    border-radius: 8px;
+    margin-top: 2%;
+    margin-bottom: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Pour les écrans de moins de 335px (bouton sort de l'écran)*/
+@media screen and (max-width : 350px)
+{
+  .button-bleu
+  {
+    width : 80%;
+  }
+}
+
+    .button-bleu a { /* ancien about-button a */
+        display: block;
+        text-align: center;
+        line-height: center;
+        padding-top: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 0em;
+        color: white;
+        font-style: normal;
     }
-    .footer a
-    {
-      font-size : 16px;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
-    }
-   
-  } */
+
+
+.about-photo-vélo img {
+    width: 100%;
+    max-height: auto;
+    padding-bottom: 6%;
+}
+
+
+@media (min-width : 710px) and (max-width : 1280px)
+{
+  .about-photo-vélo img 
+  {
+    display : block;
+    object-fit: cover;
+    width: 90%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width : 1280px)
+{
+  .about-photo-vélo img 
+  {
+    display : block;
+    object-fit: cover;
+    width: 90%;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom : 14%;
+  }
+}
 
 
 <!-- Partie 3 Services -->
@@ -231,3 +315,47 @@ color: #39D6C0;
 
   }
 }
+
+/*footer*/
+.background-footer {
+    background-color: black;
+}
+
+.footer 
+{
+  display:grid;
+  grid-template-rows: 1fr 1fr; /*footer en colonne*/
+  line-height: 24px;
+  font-size: 16px;
+}
+
+/*Version tablette et mobile, footer en ligne*/
+@media(min-width: 600px)
+{
+  .footer 
+  {
+     display: grid;
+     width:100%;
+     grid-template-columns: 1fr 1fr;
+     grid-gap : 2%;
+     align-items: first baseline;
+  }
+}
+
+
+.footer-adresse {
+    color: rgba(255, 255, 255, 0.75);
+    padding: 32px 0 0 50px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.footer-liens {
+    padding: 50px 0 32px 19px;
+}
+
+    .footer-liens a {
+        padding-left: 0%;
+        list-style-type: none;
+        color: #39D6C0;
+    }
