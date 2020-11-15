@@ -7,67 +7,156 @@
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   </head>
 
-<body>
-  <header class="header">
-    <div class="wrapper">
-      <div class="logo-header" href="index.html"> <a href="index.html"> <img src="img/logo.png"alt=""></a>
-    </div>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <a href="index.html" class="nav-link"> Accueil </a>
-          </li>
-          <li class="nav-list-item">
-            <a href="about-us.html" class="nav-link"> Qui sommes-nous ? </a>
-          </li>
-          <li class="nav-list-item">
-            <a href="services.html" class="nav-link nav-link-active">Services</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <body>
+    <div class="layout">
+        <header class="header">
+            <div class="wrapper">
+                <a href="index.html">
+                    <img class="logo-header" src="img/logo.png" alt="" width=100 height=100>
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-list-item">
+                            <a href="index.html" class="nav-link nav-link-active">Accueil</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="about-us.html" class="nav-link">Qui sommes-nous ? </a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-  <main class="main">
-    <div class="wrapper">
-      <section>
-        <div>
-          <h1 class = titre-H1> Nous prenons soin de votre vélo.</h1>
-       </div>
-        <img class = imgvelo src="img/home/home-01.jpg" alt=""/>
-      </section>
+        
+            <section class="home-section">
+                <h1 class="titre-H"> Nous prenons soin de votre vélo</h1>
+                <div> <img class="img-veloBleu" src="img/home/home-01.jpg" /> </div>
+            </section>
 
-      <section class = frame>
-        <div class = boite1>
-         <h2 >Nous aimons le vélo</h2>
-           <p> Au-delà de l'objet, le vélo est pour nous une philosophie, 
-             un art de vivre. Vous pouvez nous faire confiance. 
-            </p>
-            <a class =button1> En savoir plus  </a>
+
+            <section class="frame">
+                <div class="wrapper">
+                    
+                    <div class="boite1">
+                        <h1 class="titre-H"> Nous aimons le vélo</h1>
+                        <p class="index-paragraph">
+                            Au-delà de l’objet, le vélo est pour nous une philosophie, un art de vivre.
+                            Vous pouvez nous faire confiance.
+                        </p>
+
+                       <!-- <div class="garcon">--><img class="img-garcon" src="img/home/home-02.jpg" /> <!--</div> -->
+
+                        <div class="button-blanc">
+                            <a> En savoir plus  </a>
+                        </div>
+                    </div>
+                    
+                    <div class=boite2>
+                        <h1 class="titre-H">Un atelier professionnel</h1>
+                        <p class="index-paragraph">
+                            C'est dans notre atelier que nous réparons les vélos de nos
+                            clients et que nous testons les nouveaux produits. Aucun détail
+                            ne nous échappe.
+                        </p>
+                        <!--<div class="veloBlanc">--> <img class="img-veloBlanc" src="img/home/home-03.jpg">
+                        <!-- </div>-->
+                        <div class="button-bleu">
+                            <a> En savoir plus  </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <section class="frame-img-background">
+                <div class="item-service">
+                    <div>
+                        <img class="img-services" src="img/map-marker.png" alt="" />
+                        <h1 class="titre-services"> Services à domicile</h1>
+                        <p class="paragraphe-services">
+                            Nous nous déplaçons pour récupérer et vous
+                            ramener votre vélo réparé chez vous, en nous adaptant à vos disponibilités.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img class="img-services" src="img/support.png" alt="" />
+                        <h1 class="titre-services">Service client </h1>
+                        <p class="paragraphe-services"> Un service client à votre écoute pour vous conseiller par téléphone et vous recevoir en atelier.  </p>
+                    </div>
+
+                    <div>
+                        <img class="img-services" src="img/express.png" alt="" />
+                        <h1 class="titre-services"> Service express </h1>
+                        <p class="paragraphe-services"> Vous avez besoin que votre vélo soit en état de rouler demain ? C’est possible.</p>
+                    </div>
+
+                    <div>
+                        <img class="img-services" src="img/tools.png" alt="" />
+                        <h1 class="titre-services">Services </h1>
+                        <p class="paragraphe-services"> Réparations, conseils, équipements... Nous avons tout ce qu’il vous faut. </p>
+                    </div>
+
+                </div>
+
+                <div class=button-bleu>
+                    <a href="services.html"> En savoir plus  </a>
+
+                </div>
+            </section>
+
+            <section class="frame-img">
+                
+
+                    <div class="grid-img-fin">
+                        <img class="img-fin" src="img/home/home-05.jpg" alt="">
+                    </div>
+
+                    <div class="grid-img-fin">
+                        <img class="img-fin" src="img/home/home-06.jpg" alt="">
+                    </div>
+
+                    <div class="grid-img-fin">
+                        <img class="img-fin" src="img/home/home-07.jpg" alt="">
+                    </div>
+               
+            </section>
+
+
+            <div class="background-footer">
+
+                <footer class="footer">
+
+                    <p class="footer-adresse">
+                        Be Biker Service<br />
+                        143, avenue de Versailles,
+                        75015 Paris<br />
+                        contact@bebiker.fr<br />
+                        01.23.45.67.89
+                    </p>
+
+                    <div class="footer-liens">
+                        <nav>
+                            <ul>
+                                <li><a class="test" href="index.html">Accueil</a></li>
+
+                                <li><a href="about-us.html">Qui sommes-nous?</a></li>
+
+                                <li><a href="services.html"> Services</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </footer>
+            </div>
         </div>
-        <div class = boite2>
-          <h3 >Un atelier professionnel</h3>
-            <p> C'est dans notre atelier que nous réparons les vélos de nos
-                clients et que nous testons les nouveaux produits. Aucun détail 
-                ne nous échappe. 
-            </p> 
-                <a class =button2>En savoir plus  </a>    
-        </div>
-      </section>   
-</div>
-</main>
 
-  <div>
-    <p> <img src="img/map-marker.png" alt=""/> A domicile </p>
-    <p> Nous nous déplaçons pour récupérer et vous ramener votre vélo chez vous </p> 
-    <p><img src="img/support.png" alt=""/> Service client </p>
-    <p> Un service client à votre écoute pour vous conseiller par télephone et vous recevoir en atelier  </p> 
-    <p> <img src="img/express.png" alt=""/>Sercive exxpress </p>
-    <p> Vous avez besoin que votre vélo soit en état de rouler pour le lendemain? C'est possible.</p> 
-    <p><img src="img/tools.png" alt=""/> Services </p>
-    <p> Réparation, conseils, équipements... Nous avons tout ce qu'il vous faut </p> 
-        <a>En savoir plus  </a>
-  </div>
-
+   
 </body>
 </html>

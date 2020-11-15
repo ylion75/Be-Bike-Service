@@ -1,132 +1,542 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
 .wrapper {
     width: 90%;
-    max-width: 1100px;
-    justify-content: center;
-  }
+    max-width: 1120px;
+    margin: 0 auto;
+}
 
+.layout {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
 .header {
     background-color: #000000;
     font-family: "Pathway Gothic One", sans-serif;
-    /*width: 375px;
-    height: 321px;*/
-  }
-
-
-  header.wrapper{
-  display:flex;
-  flex-direction:column;
+    padding: 16px; 
 }
 
-.logo-header{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  display: block;
-  padding: 16px;
-}
+    .header .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.nav{
-  display: flex;
-  flex-basis: 50%;
-  justify-content: center;
-}
-
-.nav-list{
-  margin: 0;
-    padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-  flex-direction:column;
-  white-space: nowrap;
-}
-.nav-list-item{
-  flex-shrink: 0;
-  flex-wrap: nowrap;
-  padding-top:10px;
-  padding-bottom:10px;
-}
-
-:hover
-.nav-list-item{
-  background: rgba(255, 255, 255, 0.25);
-  padding-top:22%;
-  padding-bottom:22%;
-}
-
-.nav-link{
-  font-weight: 500;
-  text-decoration: none ;
-  color: white;
-  padding: 24px 16px;
-  font-size: 24px;
-  align-items: center;
-}
-
-:visited 
-.nav-link{
-  color: white;
-}
-
-:hover
-.nav-link{
-  background: rgba(255, 255, 255, 0.25);
-}
-
-.main{
-  font-family: Roboto;
-  background-color: FFFFFF;
+.logo-header {
+    width: 100px;
 }
 
 
-.titre-H1{
-  font-size: 36px;
-  text-align:center;
+    
+.nav-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
-.imgvelo{
-  left: calc(50% - 375px/2);
-  top: 498px;
-}
-
-.frame{
-  width: 375px;
-  height: 716px;
-  left: 0px;
-  top: 798px;
-  background: #000000;
-}
-.boite1{
-  background: #39D6C0;
-  width: 337px;
-  height: 314px;
-  padding-top: 32px;
-  margin-left: 19px;
+.nav-list-item + .nav-list-item {
+    margin-top: 32px;
 }
 
-.boite2{
-  background: #ffffff;
-  width: 337px;
-  height: 338px;
-  margin-left: 19px;
+
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    /*width: 100%;
+    padding: 24px 16px;
+    font-weight: 500;*/
 }
 
-.button1{
-  background: #FFFFFF;
-  border-radius: 8px;
-  width: 287px;
-  height: 64px;
-  display: flex;
-  justify-content: center;
+    .nav-link:hover,
+    .nav-link:focus {
+        background-color: #232425;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .nav-link:active {
+        background-color: rgba(255, 255, 255, 0.25);
+       
+    }
+
+@media screen and (min-width: 768px) {
+    .header .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        flex-direction: row;
+    }
+    .nav-list-item + .nav-list-item {
+        margin-left: 32px;
+    }
+
+    .nav-list-item + .nav-list-item {
+        margin-top: unset;
+    }
+
 }
-.button2{
-  background: #39D6C0;
-  border-radius: 8px;
-  width: 287px;
-  height: 64px;
-  display: flex;
-  justify-content: center;
+
+.home-section {
+    display: grid;
+    grid-template-columns: 1fr; /* on peut m�me enlever cette ligne, car c'est le comportement par d�faut d'un �l�ment utilisant `display: grid` */
+    align-items: center;
+    overflow: hidden;
 }
+.img-veloBleu {
+    display: block;
+    max-width: 100%;
+    Height: 300px;
+}
+
+    .home-section .img-veloBleu {
+        object-fit: cover;
+        object-position: 50% 0;
+    }
+.titre-H {
+    text-align: center;
+    color: black;
+    font-size: 36px;
+    padding-top: 24px;
+}
+
+.home-section .titre-H {
+    padding-bottom: 46px;
+    padding-top: 46px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* Affichage tablette */
+@media screen and (min-width: 768px) {
+    .home-section {
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 0px;
+    }
+    .img-veloBleu {
+        Height :499px;
+    }
+    .titre-H {
+        font-size: 48px;
+        padding-right: 64px;
+        padding-left: 27px;
+        text-align: left;
+    }
+}
+
+/* Affichage Ordinateur*/
+@media screen and (min-width: 1280px) {
+    .titre-H {
+        padding-left: 90px;
+        padding-right: 257px;
+    }
+}
+
+
+.frame {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.boite1 {
+    background: #39D6C0;
+    width: auto;
+    height: 314px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.boite1.titre-H {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 0px;
+}
+
+.index-paragraph {
+    font-size: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+}
+
+.boite2 {
+    background: #ffffff;
+    width: auto;
+    height: 338px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.button-blanc {
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 287px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .button-blanc a {
+        text-align: center;
+        padding-top: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        color: black;
+        font-size: 16px;
+        font-style: normal;
+        margin-bottom: 24px;
+    }
+
+.button-bleu {
+    background: #39D6C0;
+    border-radius: 8px;
+    width: 287px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 24px;
+}
+
+    .button-bleu a {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 0em;
+        color: white;
+        font-size: 16px;
+        font-style: normal;
+    }
+
+.img-garcon {
+    display: none;
+}
+
+.img-veloBlanc {
+    display: none;
+}
+
+    /*Affichage Tablette*/
+    @media screen and (min-width: 768px) {
+        .frame .titre-H {
+            font-size: 36px;
+            text-align: left;
+            margin-top: 0px;
+
+        }
+
+        .boite1 {
+            display: grid;
+            overflow: hidden;
+            height: 288px;
+            width: auto;
+            grid-template-columns: 33% 33% 33%;
+            grid-auto-rows: minmax(100px, auto);
+            grid-template-areas: "titre titre garcon" "para para garcon" "bout . garcon";
+        }
+
+        .index-paragraph {
+            padding-bottom: 0px;
+           /* padding-top :12px;
+            margin-top: 12px;*/
+        }
+
+        .boite1 .titre-H {
+            grid-area: titre;
+            padding-right: 118px;
+            padding-left : 22px;
+           margin-bottom: 0px;
+        }
+
+        .boite1 .index-paragraph {
+            grid-area: para;
+            padding-left : 22px;
+        }
+
+        .boite1 .button-blanc {
+            grid-area: bout;
+            margin-left: 34px;
+        }
+
+        .img-garcon {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 100%
+        }
+
+        .boite1 .img-garcon {
+            grid-area: garcon;
+            
+        }
+
+        .boite2 {
+            display: grid;
+            overflow: hidden;
+            Height: 312px;
+            width:auto;
+            grid-template-columns: 33% 33% 33%;
+            grid-auto-rows: minmax(1fr, 1fr);
+            grid-template-areas: "veloB titre2 titre2" "veloB para2 para2" "veloB bout2 .";
+        }
+
+            .boite2 .titre-H {
+                grid-area: titre2;
+                padding-right: 26px;
+                margin-bottom: 0px;
+            }
+
+            .boite2 .index-paragraph {
+                grid-area: para2;
+                padding-right: 24px;
+                margin-bottom: 0px;
+            }
+
+            .boite2 .button-bleu {
+                grid-area: bout2;
+                margin-left: 26px;
+               margin-top: 15px;
+                margin-bottom: 24px;
+               
+            }
+
+
+        .img-veloBlanc {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 100%
+        }
+
+        .boite2 .img-veloBlanc {
+            grid-area: veloB;
+        }
+    }
+
+/* Affichage Ordinateur*/
+@media screen and (min-width: 1280px) {
+    .boite1 .titre-H {
+        padding-left: 34px;
+        margin-bottom: 0px;
+    }
+    .boite1 .index-paragraph {
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .boite1 .button-blanc {
+        margin-bottom: 32px;
+    }
+
+    .frame .titre-H {
+        padding-top: 32px;
+    }
+
+    .boite1 {
+        Width: 1100px;
+        Height: 274px;
+        margin-bottom: 14px;
+    }
+
+    .boite2 {
+        Width: 1100px;
+        Height: 274px;
+    }
+
+    img-veloBlanc {
+        Width: 366px;
+    }
+
+    .boite2 .index-paragraph {
+        padding-right: 32px;
+    }
+
+    .boite2 .titre-H {
+        padding-right: 34px;
+    }
+
+    .boite2 .button-bleu {
+        margin-left: 34px;
+    }
+}
+
+
+    .frame-img-background {
+        background-image: url("img/home/home-04.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-color: black;
+        display: grid;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .item-service {
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .titre-services {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: white;
+        font-weight: 500;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .paragraphe-services {
+        color: white;
+        font-weight: 400;
+        margin-top: 0px;
+        padding-bottom: 50px;
+        padding-right: 19px;
+    }
+
+        .paragraphe-services:last-child {
+            padding-bottom: 64px;
+        }
+
+    .img-services {
+        padding-top: 0px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+        width: 64px;
+    }
+
+.frame-img-background .button-bleu {
+    margin-bottom: 24px;
+}
+
+
+    @media screen and (min-width: 768px) {
+        .frame-img-background {
+            background-position: top;
+            
+        }
+
+        .item-service {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        .item-service {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    .frame-img {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        overflow: hidden;
+        background-color: white;
+        grid-gap: 24px;
+    }
+
+        .frame-img .img-fin {
+            object-fit: cover;
+            object-position: 100% 50%;
+            Width: 337px;
+            Height: 250px;
+        }
+
+    .img-fin {
+        display: block;
+    }
+
+    .grid-img-fin {
+        padding-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .grid-img-fin:first-child {
+            padding-top: 64px;
+        }
+
+        .grid-img-fin:last-child {
+            padding-bottom: 70px;
+        }
+
+    /*Affichage tablette */
+    @media screen and (min-width: 768px) {
+        .frame-img {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .grid-img-fin {
+            padding-top: 32px;
+            padding-bottom: 31px;
+        }
+
+            .grid-img-fin:first-child {
+                padding-top: 32px;
+                margin-left: 32px;
+            }
+
+            .grid-img-fin:last-child {
+                padding-bottom: 31px;
+                margin-right: 33px;
+            }
+
+        .frame-img .img-fin {
+            Width: 219px;
+            Height: 350px;
+        }
+    }
+    /*Affichage Ordinateur */
+    @media screen and (min-width: 1280px) {
+        .frame-img .img-fin {
+            Width: 353px;
+            Height: 500px;
+        }
+
+        .grid-img-fin:first-child {
+            margin-left: 90px;
+        }
+
+        .grid-img-fin:last-child {
+            margin-right: 90px;
+        }
+    }
+
+
+
 .bloc-intro{
   width : 375 px;
   height : 236 px;
