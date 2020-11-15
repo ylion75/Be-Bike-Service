@@ -707,12 +707,11 @@ body {
     font-size: 36px;
 }
 
-@media(min-width : 768px)
-    {
-      .bloc-intro h1{
-        font-size: 48px;
-      }
+@media(min-width : 768px){
+    .bloc-intro h1{
+    font-size: 48px;
     }
+}
 
 .grid-services{
   padding-top: 20px; 
@@ -724,14 +723,14 @@ body {
 }
 
 .bloc-services{
+  padding-top: 20px;  
+  padding-bottom: 20px;
   flex-basis:100%;
   margin : auto; 
   flex-shrink: 0;
   flex-grow: 0;
   align-items: center;
-  padding-top: 0px;
   padding-right: 16px;
-  padding-bottom: 0px;
   padding-left: 16px;
 }
 
@@ -751,10 +750,15 @@ body {
   }
 }
 
-/* Responsive : version tablette */
+/* Responsive : version tablette + desktop */
 @media(min-width: 500px){
   .bloc-services{
     flex-basis: 50%;
+  }
+  .illustration img{
+      width: 70%;
+      max-width: 316px;
+      max-height: 271px;
   }
 }
 
