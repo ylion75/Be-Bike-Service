@@ -700,6 +700,7 @@ body {
 
 .bloc-intro{
     text-align: center;
+    padding:10px;
 }
 
 .bloc-intro h1{
@@ -714,6 +715,7 @@ body {
     }
 
 .grid-services{
+  padding-top: 20px; 
   display:flex;
   flex-wrap: wrap;
   flex-direction : row;
@@ -753,17 +755,6 @@ body {
 @media(min-width: 500px){
   .bloc-services{
     flex-basis: 50%;
-  }
-  .illustration .img{
-   
-  }
-}
-
-/* Responsive : version desktop */
-@media screen and (max-width : 800px){
-  .grid-services{
-
-
   }
 }
 
