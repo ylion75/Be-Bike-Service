@@ -681,18 +681,44 @@ body {
 
 
 /*<!--Page 3 : Services -->*/
+
 .bloc-intro{
-  width : 375 px;
+    background-color: #F7F7F7;
+    display: block;
+    width : 100%;
+    /* 
+   position: absolute;
+    position: relative;
+    width: 100%;
+  width : 375 px; 
   height : 236 px;
   left : 0 px;
   top : 321 px;
   background-color: #F7F7F7;
+    */
 }
+
+.bloc-intro{
+    text-align: center;
+}
+
+.bloc-intro h1{
+    font-size: 36px;
+}
+
+@media(min-width : 768px)
+    {
+      .bloc-intro h1{
+        font-size: 48px;
+      }
+    }
 
 .grid-services{
   display:flex;
   flex-wrap: wrap;
   flex-direction : row;
+  width: 90%;
+  margin:auto;
 }
 
 .bloc-services{
