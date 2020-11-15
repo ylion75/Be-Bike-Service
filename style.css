@@ -760,9 +760,21 @@ body {
       flex-basis: 50%;
       padding-left: 12px;
       padding-right: 12px;
+      padding : 30px;
     }
     .grid-services{
       width: 80%;  
+    }
+    .illustration .bike{
+        margin-left: 100px;
+      }
+
+    .illustration .boy{
+      margin-left: 180px;
+    }
+
+    .block-service{
+        position : right;
     }
 }
 
