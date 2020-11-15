@@ -10,7 +10,8 @@
     height: 321px;*/
   }
 
-header.wrapper{
+
+  header.wrapper{
   display:flex;
   flex-direction:column;
 }
@@ -126,7 +127,6 @@ header.wrapper{
   justify-content: center;
 }
 .bloc-intro{
-  position : absolute;
   width : 375 px;
   height : 236 px;
   left : 0 px;
@@ -277,41 +277,54 @@ body {
 }
 
 
-<!-- Partie 3 Services -->
+/*<!--Page 2 : ABOUT -->*/
 
-.block-infos{
-  position: absolute;
-  width: 375px;
-  height: 332px;
-  left: 0px;
-  top: 557px;
-
-}
-.container {
-  position: absolute;
-  display: flex;
+.grid-services{
+  display:flex;
   flex-wrap: wrap;
   flex-direction : row;
-  justify-content: center;
-  margin-top: 150px;
-
 }
 
-@media screen and (max-width : 500px){
+.bloc-services{
+  flex-basis:100%;
+  flex-wrap : wrap;
+  margin : auto;
+  flex-shrink: 0;
+  flex-grow: 0;
+  align-items: center;
+}
+
+.illustration .img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display:block;
+}
+
+/* pour les photos qui sont pas dans le petit ecran */
+@media(max-width: 500px){
   .illustration {
-    display : none;
+    display: none;
   }
 
-  .container{
-    flex-direction: column;
-    flex : 2;
+}
 
+/* Responsive : version tablette */
+@media(min-width: 500px){
+  .bloc-services{
+    flex-basis: 50%;
+  }
+  .illustration .img{
+    height:295px;
+    width: 235px;
   }
 }
+
 
 @media screen and (max-width : 800px){
-  .container .bloc-intro {
-  flex-direction : row
+  .grid-services{
+
 
   }
 }
