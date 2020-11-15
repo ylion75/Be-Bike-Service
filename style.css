@@ -293,6 +293,7 @@ body {
             object-fit: cover;
             width: 100%;
             height: 100%
+            padding-left : 4%;
         }
 
         .boite1 .img-garcon {
@@ -620,7 +621,7 @@ body {
 
 
 /* Boutton : taille fixe*/
-.button-bleu { /* ancien about-button*/
+.about-button { /* ancien about-button*/
     width: 335px;
     height: 64px;
     background-color: #39D6C0;
@@ -634,13 +635,13 @@ body {
 /*Pour les écrans de moins de 335px (bouton sort de l'écran)*/
 @media screen and (max-width : 350px)
 {
-  .button-bleu
+  .about-button
   {
     width : 80%;
   }
 }
 
-    .button-bleu a { /* ancien about-button a */
+    .about-button a { /* ancien about-button a */
         display: block;
         text-align: center;
         line-height: center;
