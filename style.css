@@ -557,7 +557,7 @@ body {
     width: 100%;
 }
 
-    .page-title h1 {
+   .page-title h1 {
         font-size: 36px; /*pour la version mobile*/
         text-align: center;
         font-weight: 700;
@@ -565,7 +565,12 @@ body {
         letter-spacing: 0em;
     }
 
-
+    @media (min-width : 710px)
+    {
+      .page-title h1 {
+        font-size: 48px;
+      }
+    }
 
 /*Création de la grille avec les 3 paragraphes*/
 .about-text {
@@ -583,7 +588,7 @@ body {
 {
   .about-text
   {
-    padding-top: 13%;
+    padding-top: 16%;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -601,7 +606,7 @@ body {
 {
   .about-text
   {
-    padding-top: 10%;
+    padding-top: 12%;
     margin-left: 5%;
     margin-right: 5%;
   }
