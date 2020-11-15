@@ -749,7 +749,7 @@ body {
   }
   .illustration img{
       /*width: 90%;*/
-      max-width: 316px;
+      max-width: 234px;
       max-height: 271px;
   }
 }
@@ -765,12 +765,17 @@ body {
     .grid-services{
       width: 80%;  
     }
+
+    .illustration img{
+        max-width: 316px;
+    }
+
     .illustration .bike{
         margin-left: 100px;
       }
 
     .illustration .boy{
-      margin-left: 180px;
+      margin-left: 160px;
     }
 
     .block-service{
