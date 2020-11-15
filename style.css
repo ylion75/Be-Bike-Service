@@ -686,16 +686,6 @@ body {
     background-color: #F7F7F7;
     display: block;
     width : 100%;
-    /* 
-   position: absolute;
-    position: relative;
-    width: 100%;
-  width : 375 px; 
-  height : 236 px;
-  left : 0 px;
-  top : 321 px;
-  background-color: #F7F7F7;
-    */
 }
 
 .bloc-intro{
@@ -723,8 +713,6 @@ body {
 }
 
 .bloc-services{
-  padding-top: 20px;  
-  padding-bottom: 20px;
   flex-basis:100%;
   margin : auto; 
   flex-shrink: 0;
@@ -737,7 +725,6 @@ body {
 .illustration img{
   max-width: 100%;
   max-height: 100%;
-  width: 90%;
   object-fit: contain;
   object-position: center;
   display:block;
@@ -756,7 +743,7 @@ body {
     flex-basis: 50%;
   }
   .illustration img{
-      width: 70%;
+      /*width: 90%;*/
       max-width: 316px;
       max-height: 271px;
   }
