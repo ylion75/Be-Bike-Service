@@ -258,7 +258,6 @@ body {
             height: 288px;
             width: auto;
             grid-template-columns: 33% 33% 33%;
-            /*grid-auto-rows: minmax(1fr, 1fr);*/
             grid-template-areas: "titre titre garcon" "para para garcon" "bout . garcon";
         }
 
@@ -303,7 +302,6 @@ body {
             Height: 312px;
             width:auto;
             grid-template-columns: 33% 33% 33%;
-            /*grid-auto-rows: minmax(1fr, 1fr);*/
             grid-template-areas: "veloB titre2 titre2" "veloB para2 para2" "veloB bout2 .";
         }
 
