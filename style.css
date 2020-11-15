@@ -533,16 +533,6 @@ body {
     }
 
 
-
-.bloc-intro{
-  width : 375 px;
-  height : 236 px;
-  left : 0 px;
-  top : 321 px;
-  background-color: #F7F7F7;
-}
-
-
 /*<!--Page 2 : ABOUT -->*/
 
 body {
@@ -691,6 +681,13 @@ body {
 
 
 /*<!--Page 3 : Services -->*/
+.bloc-intro{
+  width : 375 px;
+  height : 236 px;
+  left : 0 px;
+  top : 321 px;
+  background-color: #F7F7F7;
+}
 
 .grid-services{
   display:flex;
