@@ -565,7 +565,7 @@ body {
         letter-spacing: 0em;
     }
 
-    @media (min-width : 710px)
+    @media (min-width : 768px)
     {
       .page-title h1 {
         font-size: 48px;
@@ -584,7 +584,7 @@ body {
 }
 
 /*version tablette*/
-@media (min-width : 710px) and (max-width : 1280px)
+@media (min-width : 768px) and (max-width : 1280px)
 {
   .about-text
   {
@@ -758,7 +758,7 @@ body {
 }
 
 /*Version tablette et mobile, footer en ligne*/
-@media(min-width: 600px)
+@media(min-width: 768px)
 {
   .footer 
   {
