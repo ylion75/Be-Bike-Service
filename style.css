@@ -761,13 +761,14 @@ body {
     .container-services.mid .bloc-services.right{
         flex-basis : 70%;
         margin-left: 18px;
+        padding-top: 20px;
     }
 
     .container-services.low .bloc-services{
-        padding-top: 10px;
+        padding-top: 8px;
         flex-basis : 50%;
     }
-
+    /* Marge additionnelle par rapport à la version mobile */
     .bloc-services.txt{
         margin : 10px;
     }
@@ -809,27 +810,30 @@ body {
         flex-basis : 60%;
         margin-left: 18px;
         padding-right: 60px;
+        padding-top: 20px;
     }
     .bloc-services.txt{
         padding-left: 15px;
         padding-right: 70px;
     }
 
+    /* enlever le bloc suivant si besoin, juste pour tester paramètres */
+        .bloc-services.image img{
+        position: relative;
+        width: 90%;
+        /*width: 52%;*/
+        height: auto;
+    }
     .bloc-services.right.image{
-        object-fit: cover;
-        object-position: 100% 0%;
-        
-        width: 316px;
-        height : 271px;
-        padding-bottom: 0px;
+        padding-top: 10px;
+        max-width: 316px;
+        margin-bottom: 20px;
     }
 
     .bloc-services.left.image{
-        object-fit: cover;
-        object-position: 100% 0%;
-        width : 316px;
-        height : 247px;
-        padding-top : 15px;
+        padding-left: 40px;
+        max-width: 316px;
+        margin-left: 150px;
     }
 }
 
