@@ -833,6 +833,7 @@ body {
     .bloc-services.left.image{
         padding-left: 40px;
         max-width: 316px;
+        max-height: 247px;
         margin-left: 150px;
     }
 }
