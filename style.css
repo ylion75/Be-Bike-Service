@@ -572,19 +572,17 @@ body {
 }
 
 /*version tablette*/
-@media (min-width : 710px) and (max-width : 1280px)
+@media screen and (min-width : 768px)
 {
   .about-text
   {
     padding-top: 16%;
-    margin-left: 5%;
-    margin-right: 5%;
   }
-  
+
   .histo-jeto
   {
-    display: grid;
-    grid-template-columns:  0.90fr 1fr;
+    display: flex;
+    flex-direction: row;
     grid-gap : 5%;
   }
 }
@@ -595,16 +593,22 @@ body {
   .about-text
   {
     padding-top: 12%;
-    margin-left: 5%;
-    margin-right: 5%;
   }
+
+  
   .desktop-grid
   {
-    display: inline-grid;
-    grid-template-columns: 67% auto auto;
-    grid-gap : 3%;
-    max-height: 100%;
+    display : grid;
+    width : 100%;
+    height :100%;
+    grid-template-columns: 70% auto;
+}
+ 
+ .atelier
+ {
+    padding-left : 54px;
  }
+ 
 
 }
 
