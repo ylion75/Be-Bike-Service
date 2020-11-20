@@ -838,6 +838,7 @@ body {
 }
 
 
+
 /*footer*/
 .background-footer {
     background-color: black;
@@ -857,17 +858,20 @@ body {
     font-weight: normal;
 }
 
-.footer-liens {
-   padding-top : 32px;
-    line-height: 24px;
-}
-
     .footer-liens a {
         padding-left: 0%;
         list-style-type: none;
         font-weight: 500;
         color: #39D6C0;
         Line-height: 24px;
+        display : grid;
+        grid-template-columns: repeat(3,auto);
+        margin-bottom: 8px;
+    }
+
+    ul
+    {
+        padding-left : 19px;
     }
 
 /*Version tablette, footer en ligne*/
@@ -881,7 +885,7 @@ body {
     }
 }
 
-/*Version Ordinateur*/
+/*Version ordinateur*/
 @media (min-width : 1280px)
 {
     .footer
