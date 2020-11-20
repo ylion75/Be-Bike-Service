@@ -856,6 +856,7 @@ body {
    padding: 32px 0 0 19px;
     font-style: italic;
     font-weight: normal;
+    line-height : 24px;
 }
 
     .footer-liens a {
