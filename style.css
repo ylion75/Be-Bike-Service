@@ -809,23 +809,22 @@ body {
     background-color: black;
 }
 
-.footer 
+
+.footer
 {
-  display:grid;
-  grid-template-rows: 1fr 1fr; /*footer en colonne*/
-  line-height: 24px;
-  grid-gap: 8px;
+    display : grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .footer-adresse {
     color: rgba(255, 255, 255, 0.75);
-    padding: 32px 0 0 50px;
+   padding: 32px 0 0 19px;
     font-style: italic;
     font-weight: normal;
 }
 
 .footer-liens {
-    padding: 50px 0 32px 19px;
+   padding-top : 32px;
 }
 
     .footer-liens a {
@@ -836,12 +835,22 @@ body {
         Line-height: 24px;
     }
 
-/*Version tablette et Ordinateur, footer en ligne*/
-@media(min-width: 768px) {
+/*Version tablette, footer en ligne*/
+@media(min-width: 768px){
     .footer {
         width: 100%;
+        padding-left : 4%;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2%;
         align-items: baseline;
+    }
+}
+
+/*Version  et Ordinateur*/
+@media (min-width : 1280px)
+{
+    .footer
+    {
+        padding-left : 7%;
     }
 }
