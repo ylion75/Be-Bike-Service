@@ -38,9 +38,7 @@ body {
     width: 100px;
     margin-bottom: 17px;
 }
-.nav{
-    width: 100%;
-}
+
 .nav-list {
     list-style-type: none;
     padding-left: 0;
@@ -69,7 +67,6 @@ body {
 
 .nav-link-active {
     background-color: rgba(255, 255, 255, 0.25);
-    width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
 }
