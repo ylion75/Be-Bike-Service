@@ -837,6 +837,7 @@ body {
 
 .footer-liens {
    padding-top : 32px;
+    line-height: 24px;
 }
 
     .footer-liens a {
