@@ -170,7 +170,14 @@ body {
     margin-bottom: 0px;
     text-align: left;
 }
-
+.new-titre-H2 {
+    padding: 24px;
+    padding-bottom: 16px;
+    font-size: 36px;
+    margin-bottom: 0px;
+    text-align: left;
+    display: none;
+}
 .index-paragraph {
     padding: 24px;
     padding-top: 0px;
@@ -232,10 +239,13 @@ body {
 
 /*Affichage Tablette*/
 @media screen and (min-width: 768px) {
-    .frame .titre-H2 {
-        font-size: 36px;
+    .boite1 .titre-H2{
+        display: none;
+    }
+    
+    .frame .new-titre-H2{
+        display: grid;
         margin-top: 0px;
-
     }
 
     .frame .button {
@@ -260,7 +270,7 @@ body {
             padding-bottom: 0px;
         }
 
-        .boite1 .titre-H2 {
+        .boite1 .new-titre-H2 {
             grid-area: titre;
             padding-right: 118px;
             padding-left : 22px;
@@ -327,8 +337,9 @@ body {
 
 /* Affichage Ordinateur*/
 @media screen and (min-width: 1280px) {
-    .boite1 .titre-H2 {
+    .boite1 .new-titre-H2 {
         padding-left: 34px;
+        padding-top: 32px;
         margin-bottom: 0px;
     }
     .boite1 .index-paragraph {
@@ -343,7 +354,7 @@ body {
         margin-bottom: 32px;
     }
 
-    .frame .titre-H2 {
+    .frame .new-titre-H2 {
         padding-top: 32px;
     }
 
@@ -356,6 +367,7 @@ body {
     }
 
     .boite2 .titre-H2 {
+        padding-top: 32px;
         padding-left: 34px;
     }
 
