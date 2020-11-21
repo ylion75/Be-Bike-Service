@@ -627,6 +627,7 @@ body {
 }
 
 
+/*Version tablette*/
 @media screen and (min-width: 768px) {
     .about-text {
         margin-top: 32px;
@@ -644,9 +645,8 @@ body {
     }
 
     .histo-jeto {
-        display: flex;
-        flex-direction: row;
-        grid-gap: 5%;
+        display: grid;
+        grid-gap: 7%;
         margin-bottom: 16px;
     }
 
@@ -675,18 +675,22 @@ body {
     margin-bottom: 48px;
   }
 
+  .histo-jeto
+  {
+    grid-template-columns: 0.75fr 1fr;
+  }
+
   .desktop-grid{
     display : grid;
     width : 100%;
     height :100%;
     grid-template-columns: 70% auto;
   }
+
  
   .histo-jeto .text-box:last-child{
     padding-right : 54px;
   }
-
-
 
     .about-button .button {
         margin-bottom: 128px;
