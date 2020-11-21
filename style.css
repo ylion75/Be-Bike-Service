@@ -59,17 +59,22 @@ body {
     font-size: 24px;
 }
 
-    .nav-link:hover,
-    .nav-link:focus {
+    .nav-link:hover {
         background-color: rgba(255, 255, 255, 0.25);
         padding-top: 16px;
         padding-bottom: 16px;
+        
     }
 
     .nav
     {
         width : 100%;
         padding-bottom: 19px;
+    }
+
+    .nav-list-item
+    {
+        text-align : center;
     }
 
 .nav-link-active {
@@ -82,33 +87,50 @@ body {
 }
 
 
-    .nav-list-item
-    {
-        text-align : center;
-    }
-
-
-
 @media screen and (min-width: 768px) {
     .header .wrapper {
         width:90%;
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .nav-link:hover {
+        padding-left : 16px;
+        padding-right : 16px;
+        max-width : 100%;
+        max-height : 100%;   
+    }
+
+    .header
+    {
+        padding-top: 0px;  
+    }
+
     .wrapper
     {
         display:block;
     }
+
+    
+    .logo-header
+    {
+        margin-top : 16px;
+    }
+    
+
     .nav
     {
-        display : inline-block;
-        height : 100%;
- 
+        padding-bottom : 0px;
     }
 
-    .nav-list-active
+    
+    .nav-link-active
     {
-      padding-top: 0px;
+      padding-left : 16px;
+    padding-right : 16px;
+    align-items: stretch;
+    max-width : 100%;
+    max-height : 100%;
     }
 
     .nav-list {
@@ -121,7 +143,6 @@ body {
         max-height : 100%;
         max-width : 100%;
     }
-    
     .nav-list-item + .nav-list-item {
         margin-left: 32px;
     }
