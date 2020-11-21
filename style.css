@@ -875,15 +875,14 @@ body {
 }
 
 
-.footer
-{
+.footer .wrapper{
     display : grid;
     grid-template-rows: 1fr 1fr;
 }
 
 .footer-adresse {
     color: rgba(255, 255, 255, 0.75);
-   padding: 32px 0 0 19px;
+   padding: 32px 0 0 0px;
     font-style: italic;
     font-weight: normal;
     line-height : 24px;
@@ -907,12 +906,12 @@ body {
 
 /*Version tablette, footer en ligne*/
 @media(min-width: 768px){
-    .footer {
-        width: 100%;
-        padding-left : 4%;
+    .footer .wrapper {
+        
         grid-template-columns: 1fr 1fr;
         grid-gap: 2%;
         align-items: baseline;
+         
     }
 }
 
