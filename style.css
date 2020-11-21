@@ -24,8 +24,8 @@ body {
 .header {
     background-color: #000000;
     font-family: "Pathway Gothic One", sans-serif;
-    font-weight:400;
-    padding-top : 16px;
+    padding-top: 16px; 
+    padding-bottom: 0px;
 }
 
     .header .wrapper {
@@ -39,23 +39,17 @@ body {
     width: 100px;
     margin-bottom: 17px;
 }
-.nav {
-    width: 100%;
-    padding-bottom: 16px;
-}
 
 .nav-list {
     list-style-type: none;
     padding-left: 0;
-    display: flex;
+    display: block;
     flex-direction: column;
- }
-.nav-list-item {
-    text-align: center;
+    align-items: center;
 }
+
 .nav-list-item + .nav-list-item {
     margin-top: 32px;
-    
 }
 
 .nav-link {
@@ -63,23 +57,36 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 24px;
-
 }
 
-    .nav-link:hover  {
+    .nav-link:hover,
+    .nav-link:focus {
         background-color: rgba(255, 255, 255, 0.25);
         padding-top: 16px;
         padding-bottom: 16px;
+    }
 
+    .nav
+    {
+        width : 100%;
+        margin-bottom: 19px;
+    }
+
+    .nav-list-item
+    {
+        align-items: center;
+        text-align : center;
     }
 
 .nav-link-active {
     background-color: rgba(255, 255, 255, 0.25);
-    display: block;
+    display : block;
     padding-top: 16px;
     padding-bottom: 16px;
-    width: 100%;
+    width : 100%;
+    align-items: center;
 }
+
 
 @media screen and (min-width: 768px) {
     .header .wrapper {
