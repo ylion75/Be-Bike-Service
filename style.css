@@ -44,7 +44,6 @@ body {
     list-style-type: none;
     padding-left: 0;
     display: block;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -106,11 +105,6 @@ body {
         padding-top: 0px;  
     }
 
-    .wrapper
-    {
-        display:block;
-    }
-
     
     .logo-header
     {
@@ -128,7 +122,6 @@ body {
     {
       padding-left : 16px;
     padding-right : 16px;
-    align-items: stretch;
     max-width : 100%;
     max-height : 100%;
     }
