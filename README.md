@@ -3,6 +3,7 @@
 
 ## Projet d'étude : site Web (HTML/CSS) d'une entreprise fictive 
 Dans le cadre du cours de de développement web, nous avons dû développer le site web d'une entreprise fictive, Be-Biker-Service.
+Le site est visible en ligne sur : https://be-bike-service.vercel.app/index.html
 
 
 
