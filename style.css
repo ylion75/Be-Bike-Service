@@ -24,19 +24,24 @@ body {
 .header {
     background-color: #000000;
     font-family: "Pathway Gothic One", sans-serif;
-    padding: 16px; 
-    padding-bottom: 0px;
+    font-weight:400;
+    padding-top : 16px;
 }
 
     .header .wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width : 100%;
     }
 
 .logo-header {
     width: 100px;
     margin-bottom: 17px;
+}
+.nav {
+    width: 100%;
+    padding-bottom: 16px;
 }
 
 .nav-list {
@@ -44,14 +49,13 @@ body {
     padding-left: 0;
     display: flex;
     flex-direction: column;
-}
-
+ }
 .nav-list-item {
     text-align: center;
 }
-
 .nav-list-item + .nav-list-item {
     margin-top: 32px;
+    
 }
 
 .nav-link {
@@ -59,12 +63,14 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 24px;
+
 }
 
-    .nav-link:hover {
+    .nav-link:hover  {
         background-color: rgba(255, 255, 255, 0.25);
         padding-top: 16px;
         padding-bottom: 16px;
+
     }
 
 .nav-link-active {
@@ -85,20 +91,14 @@ body {
         margin-top:auto;
         margin-bottom: auto;
     }
-
     .nav-list {
         flex-direction: row;
         justify-content: end;
     }
     .nav-list-item + .nav-list-item {
-        margin-left: 32px;
-    }
-
-    .nav-list-item + .nav-list-item {
         margin-left: 64px;
         margin-top: unset;
     }
-    
     .nav-link-active {
         background-color: rgba(255, 255, 255, 0.25);
         display: block;
@@ -117,7 +117,6 @@ body {
         padding-top: 0px;
         padding-bottom: 0px;
     }
-
 }
 
 .home-section {
