@@ -903,7 +903,9 @@ body {
         margin-bottom: 8px;
     }
 
-    
+    ul{
+        padding-left: 0px
+}
 
 /*Version tablette, footer en ligne*/
 @media(min-width: 768px){
